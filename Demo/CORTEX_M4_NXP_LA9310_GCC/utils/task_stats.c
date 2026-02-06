@@ -5,7 +5,7 @@
  */
  
 #include "FreeRTOS.h"
-#include "FreeRTOS_CLI.h"
+#include "FreeRTOS-Plus-CLI/FreeRTOS_CLI.h"
 #include "debug_console.h"
 #include "task.h"
 #include "timers.h"

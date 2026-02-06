@@ -120,7 +120,8 @@ static void prvInitLa9310Info( struct la9310_info * pLa9310Info )
     pLa9310Info->pcie_obound = ( void * ) PCIE_PHY_ADDR;
     pLa9310Info->pHif = ( struct la9310_hif * ) ( ( uint32_t ) pLa9310Info->itcm_addr +
                                                   LA9310_EP_HIF_OFFSET );
-	pLa9310Info->pHif->dbg_log_regs.log_level = LA9310_LOG_LEVEL_INFO;
+	//pLa9310Info->pHif->dbg_log_regs.log_level = LA9310_LOG_LEVEL_INFO;
+    pLa9310Info->pHif->dbg_log_regs.log_level = LA9310_LOG_LEVEL_DBG;
     pLa9310Info->pxDcr = ( void * ) DCR_BASE_ADDR;
 
 	#ifdef TURN_ON_HOST_MODE
@@ -467,10 +468,10 @@ int iInitHandler ( void )
     vPhyTimerComparatorForce(PHY_TIMER_COMP_R01, ePhyTimerComparatorOut1);
 #endif
     /*VSPA AVI Init*/
-#ifdef LA9310_DFE_APP
+//#ifdef LA9310_DFE_APP
     /* Tell AVI driver that MBOX0 should not be monitored */
     vVSPAMboxMonitorMaskSet(CM4_MBOX1_STATUS | VSPA_MBOX1_STATUS /* | CM4_MBOX0_STATUS | VSPA_MBOX0_STATUS */);
-#endif
+//#endif
     avihndl = iLa9310AviInit();
 
     if( NULL == avihndl )
