@@ -4,5 +4,13 @@ Demo/CORTEX_M4_NXP_LA9310_GCC/Makefile
 Demo/CORTEX_M4_NXP_LA9310_GCC/cmake_install.cmake
 Demo/CORTEX_M4_NXP_LA9310_GCC/release/
 Demo/CORTEX_M4_NXP_LA9310_GCC/debug/
+drelectro/CORTEX_M4_NXP_LA9310_GCC/CMakeCache.txt
+drelectro/CORTEX_M4_NXP_LA9310_GCC/CMakeFiles/
+drelectro/CORTEX_M4_NXP_LA9310_GCC/Makefile
+drelectro/CORTEX_M4_NXP_LA9310_GCC/cmake_install.cmake
+drelectro/CORTEX_M4_NXP_LA9310_GCC/release/
+drelectro/CORTEX_M4_NXP_LA9310_GCC/debug/
+.vscode/
+build/
 cscope*
 tags
